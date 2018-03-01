@@ -15,6 +15,17 @@
 		1F3D620720477CA3006AF3C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3D620520477CA3006AF3C4 /* LaunchScreen.storyboard */; };
 		1F3D621220477CA3006AF3C4 /* UnitTrustTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D621120477CA3006AF3C4 /* UnitTrustTests.swift */; };
 		1F3D621D20477CA3006AF3C4 /* UnitTrustUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D621C20477CA3006AF3C4 /* UnitTrustUITests.swift */; };
+		1F3D623120479269006AF3C4 /* SpreadsheetBottomColumnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3D622D20479269006AF3C4 /* SpreadsheetBottomColumnView.xib */; };
+		1F3D623220479269006AF3C4 /* SpreadsheetRightRowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3D622E20479269006AF3C4 /* SpreadsheetRightRowView.xib */; };
+		1F3D623320479269006AF3C4 /* SpreadsheetLeftRowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3D622F20479269006AF3C4 /* SpreadsheetLeftRowView.xib */; };
+		1F3D623420479269006AF3C4 /* SpreadsheetTopColumnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3D623020479269006AF3C4 /* SpreadsheetTopColumnView.xib */; };
+		1F3D623A20479282006AF3C4 /* SpreadsheetBottomRightDecorationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3D623620479282006AF3C4 /* SpreadsheetBottomRightDecorationView.xib */; };
+		1F3D623B20479282006AF3C4 /* SpreadsheetTopLeftDecorationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3D623720479282006AF3C4 /* SpreadsheetTopLeftDecorationView.xib */; };
+		1F3D623C20479282006AF3C4 /* SpreadsheetTopRightDecorationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3D623820479282006AF3C4 /* SpreadsheetTopRightDecorationView.xib */; };
+		1F3D623D20479282006AF3C4 /* SpreadsheetBottomLeftDecorationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3D623920479282006AF3C4 /* SpreadsheetBottomLeftDecorationView.xib */; };
+		1F3D623F204792C0006AF3C4 /* SpreadsheetCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D623E204792C0006AF3C4 /* SpreadsheetCollectionReusableView.swift */; };
+		1F3D624120479779006AF3C4 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D624020479779006AF3C4 /* DataCollectionViewCell.swift */; };
+		1F3D62432047A207006AF3C4 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D62422047A207006AF3C4 /* LandingViewController.swift */; };
 		2CFC42496AA92AD02C9B591E /* Pods_UnitTrustTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3D6B0E5ECD67907CF925E1 /* Pods_UnitTrustTests.framework */; };
 		59CFBE24E8E3330CE7825E9F /* Pods_UnitTrustUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A48CFE8EE20DABB677C8CC /* Pods_UnitTrustUITests.framework */; };
 		CDFCBDB27C461C4B747118CD /* Pods_UnitTrust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B51086C2D94226C41D854 /* Pods_UnitTrust.framework */; };
@@ -52,6 +63,17 @@
 		1F3D621820477CA3006AF3C4 /* UnitTrustUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTrustUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3D621C20477CA3006AF3C4 /* UnitTrustUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTrustUITests.swift; sourceTree = "<group>"; };
 		1F3D621E20477CA3006AF3C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F3D622D20479269006AF3C4 /* SpreadsheetBottomColumnView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpreadsheetBottomColumnView.xib; sourceTree = "<group>"; };
+		1F3D622E20479269006AF3C4 /* SpreadsheetRightRowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpreadsheetRightRowView.xib; sourceTree = "<group>"; };
+		1F3D622F20479269006AF3C4 /* SpreadsheetLeftRowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpreadsheetLeftRowView.xib; sourceTree = "<group>"; };
+		1F3D623020479269006AF3C4 /* SpreadsheetTopColumnView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpreadsheetTopColumnView.xib; sourceTree = "<group>"; };
+		1F3D623620479282006AF3C4 /* SpreadsheetBottomRightDecorationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpreadsheetBottomRightDecorationView.xib; sourceTree = "<group>"; };
+		1F3D623720479282006AF3C4 /* SpreadsheetTopLeftDecorationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpreadsheetTopLeftDecorationView.xib; sourceTree = "<group>"; };
+		1F3D623820479282006AF3C4 /* SpreadsheetTopRightDecorationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpreadsheetTopRightDecorationView.xib; sourceTree = "<group>"; };
+		1F3D623920479282006AF3C4 /* SpreadsheetBottomLeftDecorationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpreadsheetBottomLeftDecorationView.xib; sourceTree = "<group>"; };
+		1F3D623E204792C0006AF3C4 /* SpreadsheetCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpreadsheetCollectionReusableView.swift; sourceTree = "<group>"; };
+		1F3D624020479779006AF3C4 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		1F3D62422047A207006AF3C4 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		1F3D6B0E5ECD67907CF925E1 /* Pods_UnitTrustTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTrustTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2654BA45F7ADA6D70270D82E /* Pods-UnitTrustUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTrustUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTrustUITests/Pods-UnitTrustUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		269F11B1AD8E1B5F3A749453 /* Pods-UnitTrust.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTrust.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTrust/Pods-UnitTrust.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,8 +138,13 @@
 		1F3D61F820477CA3006AF3C4 /* UnitTrust */ = {
 			isa = PBXGroup;
 			children = (
+				1F3D623520479279006AF3C4 /* DecorationViews */,
+				1F3D622C2047925C006AF3C4 /* SupplementaryViews */,
 				1F3D61F920477CA3006AF3C4 /* AppDelegate.swift */,
+				1F3D624020479779006AF3C4 /* DataCollectionViewCell.swift */,
 				1F3D61FB20477CA3006AF3C4 /* ViewController.swift */,
+				1F3D62422047A207006AF3C4 /* LandingViewController.swift */,
+				1F3D623E204792C0006AF3C4 /* SpreadsheetCollectionReusableView.swift */,
 				1F3D61FD20477CA3006AF3C4 /* Main.storyboard */,
 				1F3D620320477CA3006AF3C4 /* Assets.xcassets */,
 				1F3D620520477CA3006AF3C4 /* LaunchScreen.storyboard */,
@@ -143,6 +170,28 @@
 				1F3D621E20477CA3006AF3C4 /* Info.plist */,
 			);
 			path = UnitTrustUITests;
+			sourceTree = "<group>";
+		};
+		1F3D622C2047925C006AF3C4 /* SupplementaryViews */ = {
+			isa = PBXGroup;
+			children = (
+				1F3D622D20479269006AF3C4 /* SpreadsheetBottomColumnView.xib */,
+				1F3D622F20479269006AF3C4 /* SpreadsheetLeftRowView.xib */,
+				1F3D622E20479269006AF3C4 /* SpreadsheetRightRowView.xib */,
+				1F3D623020479269006AF3C4 /* SpreadsheetTopColumnView.xib */,
+			);
+			path = SupplementaryViews;
+			sourceTree = "<group>";
+		};
+		1F3D623520479279006AF3C4 /* DecorationViews */ = {
+			isa = PBXGroup;
+			children = (
+				1F3D623920479282006AF3C4 /* SpreadsheetBottomLeftDecorationView.xib */,
+				1F3D623620479282006AF3C4 /* SpreadsheetBottomRightDecorationView.xib */,
+				1F3D623720479282006AF3C4 /* SpreadsheetTopLeftDecorationView.xib */,
+				1F3D623820479282006AF3C4 /* SpreadsheetTopRightDecorationView.xib */,
+			);
+			path = DecorationViews;
 			sourceTree = "<group>";
 		};
 		37927A63472E45EE93A234D6 /* Pods */ = {
@@ -284,9 +333,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F3D623220479269006AF3C4 /* SpreadsheetRightRowView.xib in Resources */,
 				1F3D620720477CA3006AF3C4 /* LaunchScreen.storyboard in Resources */,
+				1F3D623C20479282006AF3C4 /* SpreadsheetTopRightDecorationView.xib in Resources */,
 				1F3D620420477CA3006AF3C4 /* Assets.xcassets in Resources */,
+				1F3D623120479269006AF3C4 /* SpreadsheetBottomColumnView.xib in Resources */,
+				1F3D623420479269006AF3C4 /* SpreadsheetTopColumnView.xib in Resources */,
+				1F3D623B20479282006AF3C4 /* SpreadsheetTopLeftDecorationView.xib in Resources */,
 				1F3D61FF20477CA3006AF3C4 /* Main.storyboard in Resources */,
+				1F3D623D20479282006AF3C4 /* SpreadsheetBottomLeftDecorationView.xib in Resources */,
+				1F3D623320479269006AF3C4 /* SpreadsheetLeftRowView.xib in Resources */,
+				1F3D623A20479282006AF3C4 /* SpreadsheetBottomRightDecorationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,9 +518,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F3D623F204792C0006AF3C4 /* SpreadsheetCollectionReusableView.swift in Sources */,
 				1F3D61FC20477CA3006AF3C4 /* ViewController.swift in Sources */,
 				1F3D61FA20477CA3006AF3C4 /* AppDelegate.swift in Sources */,
 				1F3D620220477CA3006AF3C4 /* UnitTrust.xcdatamodeld in Sources */,
+				1F3D62432047A207006AF3C4 /* LandingViewController.swift in Sources */,
+				1F3D624120479779006AF3C4 /* DataCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +693,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ULB4RP6JB6;
 				INFOPLIST_FILE = UnitTrust/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.compass.UnitTrust;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -649,6 +710,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ULB4RP6JB6;
 				INFOPLIST_FILE = UnitTrust/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.compass.UnitTrust;
 				PRODUCT_NAME = "$(TARGET_NAME)";
