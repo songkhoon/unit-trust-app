@@ -1,0 +1,6 @@
+framework module Pods_UnitTrust {
+  umbrella header "Pods-UnitTrust-umbrella.h"
+
+  export *
+  module * { export * }
+}
