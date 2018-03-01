@@ -358,9 +358,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UnitTrust/Pods-UnitTrust-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpreadsheet/SwiftSpreadsheet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpreadsheet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
