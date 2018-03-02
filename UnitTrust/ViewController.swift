@@ -14,20 +14,20 @@ class ViewController: UIViewController {
     private var backgroundTimer: Timer?
     
     fileprivate let headTitles = [
-        "Welcome to knapshot",
-        "At your service",
-        "Connecting you to the Right Company",
-        "Connecting you to the Right Event",
-        "Connecting you to the Right Contact",
-        "Connecting you to the Right Advice"
+        "Welcome to RBS",
+        "Welcome to RBS",
+        "Welcome to RBS",
+        "Welcome to RBS",
+        "Welcome to RBS",
+        "Welcome to RBS"
     ]
     fileprivate let subTitles = [
-        "We helps you connect to the right contacts and leads",
-        "knapshot helps you connect to the right contacts and leads",
-        "We will do our best to recommand you the right companies",
-        "We will help you find and recommand the right event to attend and network",
-        "We will recommend people you should meet online and in event",
-        "We have depository of essential guidance"
+        "We specializes in the development and delivery of application to meet the information technology needs of various industries.",
+        "We are committed to deliver top quality information systems products and services.",
+        "We are committed to deliver top quality information systems products and services.",
+        "We are committed to deliver top quality information systems products and services.",
+        "We are committed to deliver top quality information systems products and services.",
+        "We are committed to deliver top quality information systems products and services."
     ]
     
     let backgroundViewController: UIPageViewController = {
@@ -176,18 +176,8 @@ class ViewController: UIViewController {
         
         let guestButton = createButton(.orange, "USE AS GUEST")
         guestButton.addTarget(self, action: #selector(guestHandler), for: .touchUpInside)
-        let linkedInButton = createButton(UIColor(r: 0, g: 122, b: 176), "SIGN WITH LINKEDIN")
         
         let iconSize: CGFloat = 18.0
-        let linkedinIcon = UIImageView(image: #imageLiteral(resourceName: "linkedin"))
-        linkedInButton.addSubview(linkedinIcon)
-        linkedinIcon.translatesAutoresizingMaskIntoConstraints = false
-        linkedinIcon.leadingAnchor.constraint(equalTo: linkedInButton.leadingAnchor, constant: 20).isActive = true
-        linkedinIcon.centerYAnchor.constraint(equalTo: linkedInButton.centerYAnchor).isActive = true
-        linkedinIcon.widthAnchor.constraint(equalToConstant: iconSize).isActive = true
-        linkedinIcon.heightAnchor.constraint(equalToConstant: iconSize).isActive = true
-        
-        linkedInButton.addTarget(self, action: #selector(linkedInHandler), for: .touchUpInside)
         let emailButton = createButton(UIColor(r: 51, g: 51, b: 51), "SIGN IN WITH EMAIL")
         let emailIcon = UIImageView(image: #imageLiteral(resourceName: "email"))
         emailButton.addSubview(emailIcon)
@@ -200,7 +190,6 @@ class ViewController: UIViewController {
         
         let stackView:UIStackView = UIStackView()
         stackView.addArrangedSubview(guestButton)
-        stackView.addArrangedSubview(linkedInButton)
         stackView.addArrangedSubview(emailButton)
         
         stackView.axis = .vertical
@@ -220,7 +209,7 @@ class ViewController: UIViewController {
         buttonContainer.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor, constant: -80).isActive = true
         buttonContainer.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         buttonContainer.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8).isActive = true
-        buttonContainer.heightAnchor.constraint(equalToConstant: 165).isActive = true
+        buttonContainer.heightAnchor.constraint(equalToConstant: 115).isActive = true
         
         let signupButton:UIButton = UIButton()
         let signupText = "Not a member? Sign Up"

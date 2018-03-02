@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         view.backgroundColor = .white
         automaticallyAdjustsScrollViewInsets = false
-        
+        addBackButton(title: "Back")
         title = "Sign In With Email"
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardNotification(notification:)), name: NSNotification.Name.UIKeyboardDidChangeFrame, object: nil)
         setupLayout()
@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = false
     }
     
     private func setupLayout() {
