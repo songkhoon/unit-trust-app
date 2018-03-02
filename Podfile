@@ -2,6 +2,7 @@
 # platform :ios, '9.0'
 def pods
     pod "SwiftSpreadsheet"
+    pod 'IHKeyboardAvoiding'
 end
 
 target 'UnitTrust' do

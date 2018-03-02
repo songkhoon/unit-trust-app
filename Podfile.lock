@@ -1,12 +1,15 @@
 PODS:
+  - IHKeyboardAvoiding (4.2)
   - SwiftSpreadsheet (1.1.0)
 
 DEPENDENCIES:
+  - IHKeyboardAvoiding
   - SwiftSpreadsheet
 
 SPEC CHECKSUMS:
+  IHKeyboardAvoiding: 9fbf816b7c3c84911964802ff110d12caf40ebef
   SwiftSpreadsheet: bf014416e9186f1e4aee2b391fb45e5d4f21e1be
 
-PODFILE CHECKSUM: 631a7583ad5b7918b71a078e31b6d6a5ce45568f
+PODFILE CHECKSUM: 4810c61b87b6dc03970fffe10f69d1e0aa168977
 
 COCOAPODS: 1.4.0

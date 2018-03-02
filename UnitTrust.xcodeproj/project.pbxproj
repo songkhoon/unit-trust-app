@@ -26,6 +26,14 @@
 		1F3D623F204792C0006AF3C4 /* SpreadsheetCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D623E204792C0006AF3C4 /* SpreadsheetCollectionReusableView.swift */; };
 		1F3D624120479779006AF3C4 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D624020479779006AF3C4 /* DataCollectionViewCell.swift */; };
 		1F3D62432047A207006AF3C4 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D62422047A207006AF3C4 /* LandingViewController.swift */; };
+		1F70B17420493561008FA118 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70B17320493561008FA118 /* ColorExtension.swift */; };
+		1F70B17620493691008FA118 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70B17520493691008FA118 /* LoginViewController.swift */; };
+		1F70B1782049373A008FA118 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70B1772049373A008FA118 /* ViewControllerExtension.swift */; };
+		1F70B17A20493751008FA118 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70B17920493750008FA118 /* ViewExtension.swift */; };
+		1F70B17D2049378A008FA118 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70B17C20493789008FA118 /* UserManager.swift */; };
+		1F70B17F204937C9008FA118 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70B17E204937C9008FA118 /* ForgotPasswordController.swift */; };
+		1F70B18120493874008FA118 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70B18020493874008FA118 /* LoadingView.swift */; };
+		1F70B1832049395C008FA118 /* LogoBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70B1822049395C008FA118 /* LogoBackgroundView.swift */; };
 		2CFC42496AA92AD02C9B591E /* Pods_UnitTrustTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3D6B0E5ECD67907CF925E1 /* Pods_UnitTrustTests.framework */; };
 		59CFBE24E8E3330CE7825E9F /* Pods_UnitTrustUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A48CFE8EE20DABB677C8CC /* Pods_UnitTrustUITests.framework */; };
 		BCF3B73C204837BE000A2BE0 /* LoginViewInterface.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF3B735204837BE000A2BE0 /* LoginViewInterface.xib */; };
@@ -82,6 +90,14 @@
 		1F3D624020479779006AF3C4 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
 		1F3D62422047A207006AF3C4 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		1F3D6B0E5ECD67907CF925E1 /* Pods_UnitTrustTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTrustTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F70B17320493561008FA118 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		1F70B17520493691008FA118 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1F70B1772049373A008FA118 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		1F70B17920493750008FA118 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		1F70B17C20493789008FA118 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		1F70B17E204937C9008FA118 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
+		1F70B18020493874008FA118 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		1F70B1822049395C008FA118 /* LogoBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoBackgroundView.swift; sourceTree = "<group>"; };
 		2654BA45F7ADA6D70270D82E /* Pods-UnitTrustUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTrustUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTrustUITests/Pods-UnitTrustUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		269F11B1AD8E1B5F3A749453 /* Pods-UnitTrust.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTrust.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTrust/Pods-UnitTrust.debug.xcconfig"; sourceTree = "<group>"; };
 		4953D9D6B64DA557EF8096B6 /* Pods-UnitTrust.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTrust.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTrust/Pods-UnitTrust.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,12 +168,16 @@
 		1F3D61F820477CA3006AF3C4 /* UnitTrust */ = {
 			isa = PBXGroup;
 			children = (
+				1F70B17B20493781008FA118 /* Model */,
+				1F70B17220493557008FA118 /* Helper */,
 				BCF3B7342048378C000A2BE0 /* View */,
 				1F3D623520479279006AF3C4 /* DecorationViews */,
 				1F3D622C2047925C006AF3C4 /* SupplementaryViews */,
 				1F3D61F920477CA3006AF3C4 /* AppDelegate.swift */,
 				1F3D624020479779006AF3C4 /* DataCollectionViewCell.swift */,
 				1F3D61FB20477CA3006AF3C4 /* ViewController.swift */,
+				1F70B17520493691008FA118 /* LoginViewController.swift */,
+				1F70B17E204937C9008FA118 /* ForgotPasswordController.swift */,
 				1F3D62422047A207006AF3C4 /* LandingViewController.swift */,
 				1F3D623E204792C0006AF3C4 /* SpreadsheetCollectionReusableView.swift */,
 				1F3D61FD20477CA3006AF3C4 /* Main.storyboard */,
@@ -209,6 +229,24 @@
 			path = DecorationViews;
 			sourceTree = "<group>";
 		};
+		1F70B17220493557008FA118 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1F70B1772049373A008FA118 /* ViewControllerExtension.swift */,
+				1F70B17320493561008FA118 /* ColorExtension.swift */,
+				1F70B17920493750008FA118 /* ViewExtension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1F70B17B20493781008FA118 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F70B17C20493789008FA118 /* UserManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		37927A63472E45EE93A234D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,7 +275,9 @@
 			children = (
 				BCF3B736204837BE000A2BE0 /* ForgotPasswordView.swift */,
 				BCF3B73A204837BE000A2BE0 /* ForgotPasswordView.xib */,
+				1F70B18020493874008FA118 /* LoadingView.swift */,
 				BCF3B737204837BE000A2BE0 /* LoadingView.xib */,
+				1F70B1822049395C008FA118 /* LogoBackgroundView.swift */,
 				BCF3B738204837BE000A2BE0 /* LoginViewInterface.swift */,
 				BCF3B735204837BE000A2BE0 /* LoginViewInterface.xib */,
 				BCF3B739204837BE000A2BE0 /* SignupProfileView.swift */,
@@ -449,10 +489,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UnitTrust/Pods-UnitTrust-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IHKeyboardAvoiding/IHKeyboardAvoiding.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSpreadsheet/SwiftSpreadsheet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IHKeyboardAvoiding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpreadsheet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,13 +595,21 @@
 			files = (
 				BCF3B73F204837BE000A2BE0 /* LoginViewInterface.swift in Sources */,
 				BCF3B740204837BE000A2BE0 /* SignupProfileView.swift in Sources */,
+				1F70B17D2049378A008FA118 /* UserManager.swift in Sources */,
 				1F3D623F204792C0006AF3C4 /* SpreadsheetCollectionReusableView.swift in Sources */,
 				BCF3B73D204837BE000A2BE0 /* ForgotPasswordView.swift in Sources */,
+				1F70B18120493874008FA118 /* LoadingView.swift in Sources */,
 				1F3D61FC20477CA3006AF3C4 /* ViewController.swift in Sources */,
 				1F3D61FA20477CA3006AF3C4 /* AppDelegate.swift in Sources */,
 				1F3D620220477CA3006AF3C4 /* UnitTrust.xcdatamodeld in Sources */,
 				1F3D62432047A207006AF3C4 /* LandingViewController.swift in Sources */,
+				1F70B1782049373A008FA118 /* ViewControllerExtension.swift in Sources */,
+				1F70B17F204937C9008FA118 /* ForgotPasswordController.swift in Sources */,
 				1F3D624120479779006AF3C4 /* DataCollectionViewCell.swift in Sources */,
+				1F70B1832049395C008FA118 /* LogoBackgroundView.swift in Sources */,
+				1F70B17420493561008FA118 /* ColorExtension.swift in Sources */,
+				1F70B17620493691008FA118 /* LoginViewController.swift in Sources */,
+				1F70B17A20493751008FA118 /* ViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

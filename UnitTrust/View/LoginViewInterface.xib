@@ -32,7 +32,7 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading-background" translatesAutoresizingMaskIntoConstraints="NO" id="6Zk-2F-5yG">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RBS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHD-qJ-Vb6">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RBS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHD-qJ-Vb6">
                             <rect key="frame" x="104" y="121" width="166.5" height="97.5"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="88"/>
@@ -47,6 +47,11 @@
                         <constraint firstItem="6Zk-2F-5yG" firstAttribute="leading" secondItem="hlZ-9I-7yf" secondAttribute="leading" id="hbw-ga-Osh"/>
                         <constraint firstAttribute="trailing" secondItem="6Zk-2F-5yG" secondAttribute="trailing" id="n5B-a0-hC1"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="FHD-qJ-Vb6"/>
+                        </mask>
+                    </variation>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d9L-of-mXA" userLabel="InputStack">
                     <rect key="frame" x="30" y="461" width="315" height="186"/>
