@@ -3,6 +3,7 @@
 def pods
     pod "SwiftSpreadsheet"
     pod 'IHKeyboardAvoiding'
+    pod 'Charts'
 end
 
 target 'UnitTrust' do
