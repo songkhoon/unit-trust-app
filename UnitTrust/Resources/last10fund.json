@@ -1,0 +1,48 @@
+{
+	"data": [{
+			"date": "02/01/2018",
+            "transactionType":"Sale",
+            "units":9999.99,
+            "amount":9999.99,
+            "servicesCharge":25.60,
+            "investmentAmounr":11111,
+            "gst":11.34
+		},
+		{
+			"date": "30/12/2017",
+            "transactionType":"Sale",
+            "units":9999.99,
+            "amount":9999.99,
+            "servicesCharge":25.60,
+            "investmentAmounr":11111,
+            "gst":11.34
+        },
+		{
+			"date": "10/10/2017",
+            "transactionType":"Redemption",
+            "units":9999.99,
+            "amount":9999.99,
+            "servicesCharge":25.60,
+            "investmentAmounr":11111,
+            "gst":11.34
+        },
+		{
+			"date": "01/04/2017",
+            "transactionType":"Switch In",
+            "units":9999.99,
+            "amount":9999.99,
+            "servicesCharge":25.60,
+            "investmentAmounr":11111,
+            "gst":11.34
+        },
+		{
+			"date": "01/02/2017",
+            "transactionType":"Sale",
+            "units":9999.99,
+            "amount":9999.99,
+            "servicesCharge":25.60,
+            "investmentAmounr":11111,
+            "gst":11.34
+        }
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"data": [{
+			"fund": "Fund A",
+			"units": 10000,
+			"navPrice": 1.1234,
+			"marketingValue": 101234,
+			"date": "12/3/2018"
+		},
+		{
+			"fund": "Fund B",
+			"units": 10000,
+			"navPrice": 1.1234,
+			"marketingValue": 101234,
+			"date": "12/3/2018"
+		}
+	]
+}
