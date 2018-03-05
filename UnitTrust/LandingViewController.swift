@@ -15,6 +15,7 @@ class LandingViewController: UIViewController {
     let defaultSupplementaryViewIdentifier = "DefaultSupplementaryViewIdentifier"
     let numberFormatter = NumberFormatter()
     let lightGreyColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
+    let fundModel = FundModel()
     
     let dataArray: [[Double]] = {
         var finalArray = [[Double]]()
@@ -43,6 +44,14 @@ class LandingViewController: UIViewController {
         view.register(DataCollectionViewCell.self, forCellWithReuseIdentifier: defaultCellIdentifier)
         
         return view
+    }()
+    
+    lazy var fundDetail: FundDetailData = {
+        if let result = fundModel.retrieveFundDetailData() {
+            return result
+        } else {
+            return FundDetailData()
+        }
     }()
     
     override func viewDidLoad() {
@@ -88,17 +97,21 @@ extension LandingViewController: SpreadsheetLayoutDelegate {
 extension LandingViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return dataArray.count
+        return fundDetail.data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataArray[section].count
+        return fundDetail.header.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: defaultCellIdentifier, for: indexPath) as! DataCollectionViewCell
-        let value = dataArray[indexPath.section][indexPath.item]
-        cell.infoLabel.text = numberFormatter.string(from: NSNumber(value: value))
+        let value = fundDetail.dataList[indexPath.section][indexPath.item]
+        if let value = value as? Double {
+            cell.infoLabel.text = numberFormatter.string(from: NSNumber(value: value))
+        } else {
+            cell.infoLabel.text = String(describing: value)
+        }
         cell.backgroundColor = indexPath.item % 2 == 1 ? self.lightGreyColor : UIColor.white
         return cell
     }
@@ -108,9 +121,9 @@ extension LandingViewController: UICollectionViewDataSource {
         let supplementaryView = collectionView.dequeueReusableSupplementaryView(ofKind: viewKind.rawValue, withReuseIdentifier: defaultSupplementaryViewIdentifier, for: indexPath) as! SpreadsheetCollectionReusableView
         switch viewKind {
         case .leftRowHeadline:
-            supplementaryView.infoLabel.text = "Section \(indexPath.section)"
+            supplementaryView.infoLabel.text = fundDetail.data[indexPath.section].fund
         case .topColumnHeader:
-            supplementaryView.infoLabel.text = "item \(indexPath.item)"
+            supplementaryView.infoLabel.text = fundDetail.header[indexPath.item]
             supplementaryView.backgroundColor = indexPath.item % 2 == 1 ? self.lightGreyColor : UIColor.white
         default:
             break
