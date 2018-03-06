@@ -12,6 +12,7 @@ class DataCollectionViewCell: UICollectionViewCell {
     
     let infoLabel: UILabel = {
         let view = UILabel()
+        view.font = UIFont.systemFont(ofSize: 11)
         return view
     }()
     

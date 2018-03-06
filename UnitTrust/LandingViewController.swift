@@ -89,7 +89,7 @@ extension LandingViewController: SpreadsheetLayoutDelegate {
     }
     
     func heightsOfHeaderAndFooterColumnsInSpreadsheet(layout: SpreadsheetLayout) -> (headerHeight: CGFloat?, footerHeight: CGFloat?) {
-        return (70, nil)
+        return (50, nil)
     }
     
 }
@@ -112,7 +112,7 @@ extension LandingViewController: UICollectionViewDataSource {
         } else {
             cell.infoLabel.text = String(describing: value)
         }
-        cell.backgroundColor = indexPath.item % 2 == 1 ? self.lightGreyColor : UIColor.white
+        cell.backgroundColor = indexPath.section % 2 == 1 ? self.lightGreyColor : UIColor.white
         return cell
     }
     
@@ -121,13 +121,13 @@ extension LandingViewController: UICollectionViewDataSource {
         let supplementaryView = collectionView.dequeueReusableSupplementaryView(ofKind: viewKind.rawValue, withReuseIdentifier: defaultSupplementaryViewIdentifier, for: indexPath) as! SpreadsheetCollectionReusableView
         switch viewKind {
         case .leftRowHeadline:
-            supplementaryView.infoLabel.text = fundDetail.data[indexPath.section].fund
+            supplementaryView.infoLabel.text = fundDetail.data[indexPath.section].fundname
         case .topColumnHeader:
             supplementaryView.infoLabel.text = fundDetail.header[indexPath.item]
-            supplementaryView.backgroundColor = indexPath.item % 2 == 1 ? self.lightGreyColor : UIColor.white
         default:
             break
         }
+        supplementaryView.backgroundColor = indexPath.section % 2 == 1 ? self.lightGreyColor : UIColor.white
         return supplementaryView
     }
     
