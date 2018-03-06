@@ -1,17 +1,223 @@
 {
-	"data": [{
-			"fund": "Fund A",
-			"units": 10000,
-			"navPrice": 1.1234,
-			"marketingValue": 101234,
-			"date": "12/3/2018"
-		},
-		{
-			"fund": "Fund B",
-			"units": 10000,
-			"navPrice": 1.1234,
-			"marketingValue": 101234,
-			"date": "12/3/2018"
-		}
-	]
+    "data": [{
+             "masteraccount": "6000000101",
+             "fundname": "UNITED ASEAN DISCOVERY FUND",
+             "scheme": "CASH",
+             "amountpaid": 72670938.15,
+             "totalunit": 200999375.66,
+             "umstid": "1",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.2898,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED CASH FUND",
+             "scheme": "CASH",
+             "amountpaid": 2143998252.86,
+             "totalunit": 1552970805.47,
+             "umstid": "2",
+             "account": null,
+             "currency": "MYR",
+             "nav": 1.0032,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED TRIGGER EQUITY FUND",
+             "scheme": "CASH",
+             "amountpaid": 2480131.79,
+             "totalunit": 2402597.39,
+             "umstid": "5",
+             "account": null,
+             "currency": "MYR",
+             "nav": 1.0657,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED GLOBAL DURABLE EQUITY FUND MYRH",
+             "scheme": "CASH",
+             "amountpaid": 119934203.83,
+             "totalunit": 109102867.75,
+             "umstid": "7",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.5365,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED GLOBAL DURABLE EQUITY FUND USD",
+             "scheme": "CASH",
+             "amountpaid": 28571789.1,
+             "totalunit": 12884742.77,
+             "umstid": "8",
+             "account": null,
+             "currency": "USD",
+             "nav": 0.5032,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED TRIGGER BOND FUND",
+             "scheme": "CASH",
+             "amountpaid": 85717675.04,
+             "totalunit": 85159337.32,
+             "umstid": "10",
+             "account": null,
+             "currency": "MYR",
+             "nav": 1.0498,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED BOND EQUITY STRATEGIC TRUST",
+             "scheme": "CASH",
+             "amountpaid": 11910921.74,
+             "totalunit": 14803904.97,
+             "umstid": "12",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.5301,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED INCOME PLUS FUND",
+             "scheme": "CASH",
+             "amountpaid": 219678020.65,
+             "totalunit": 377421221.03,
+             "umstid": "13",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.5352,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED JAPAN DISCOVERY FUND MYRH",
+             "scheme": "CASH",
+             "amountpaid": 70015559.23,
+             "totalunit": 109372886.09,
+             "umstid": "15",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.5121,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED MONEY MARKET FUND",
+             "scheme": "CASH",
+             "amountpaid": 0.0,
+             "totalunit": 0.0,
+             "umstid": "16",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.5012,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED TARGET INCOME BOND FUND",
+             "scheme": "CASH",
+             "amountpaid": 78101090.97,
+             "totalunit": 151930218.52,
+             "umstid": "19",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.5286,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED TARGET INCOME BOND FUND 2",
+             "scheme": "CASH",
+             "amountpaid": 51507302.31,
+             "totalunit": 102113772.32,
+             "umstid": "20",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.5257,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED TARGET INCOME BOND FUND 3",
+             "scheme": "CASH",
+             "amountpaid": 59658309.6,
+             "totalunit": 118412897.7,
+             "umstid": "21",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.54,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED TARGET INCOME BOND FUND 4",
+             "scheme": "CASH",
+             "amountpaid": 43310420.8,
+             "totalunit": 85475724.46,
+             "umstid": "22",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.5244,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED TARGET INCOME BOND FUND 5",
+             "scheme": "CASH",
+             "amountpaid": 113676718.57,
+             "totalunit": 226884702.9,
+             "umstid": "29",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.5177,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED TARGET INCOME BOND FUND 6",
+             "scheme": "CASH",
+             "amountpaid": 115626863.29,
+             "totalunit": 228529504.94,
+             "umstid": "31",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.509,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED TARGET INCOME BOND FUND 8",
+             "scheme": "CASH",
+             "amountpaid": 49340486.55,
+             "totalunit": 98373592.85,
+             "umstid": "34",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.5043,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED TARGET INCOME BOND FUND 9",
+             "scheme": "CASH",
+             "amountpaid": 40482115.81,
+             "totalunit": 80730185.78,
+             "umstid": "35",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.5016,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED GLOBAL QUALITY EQUITY FUND MYRH",
+             "scheme": "CASH",
+             "amountpaid": 14812476.45,
+             "totalunit": 32596976.33,
+             "umstid": "36",
+             "account": null,
+             "currency": "MYR",
+             "nav": 0.4927,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }, {
+             "masteraccount": "6000000101",
+             "fundname": "UNITED GLOBAL QUALITY EQUITY FUND USD",
+             "scheme": "CASH",
+             "amountpaid": 1850609.63,
+             "totalunit": 884216.35,
+             "umstid": "37",
+             "account": null,
+             "currency": "USD",
+             "nav": 0.4903,
+             "navDate": "11/1/2016 12:00:00 AM"
+             }]
 }

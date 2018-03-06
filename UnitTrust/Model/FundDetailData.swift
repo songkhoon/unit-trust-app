@@ -10,11 +10,11 @@ import Foundation
 
 struct FundDetailData: Codable {
     
-    let header = ["Units", "NAV Price", "Marketing Value", "Date"]
+    let header = ["Plan", "Market Value", "Unit", "id", "Currency", "Nav", "Nav Date"]
     var data: [FundData]
     var dataList: [[Any]] {
         get {
-            return data.map { [$0.units, $0.navPrice, $0.marketingValue, $0.date] }
+            return data.map { [$0.scheme, $0.amountpaid, $0.totalunit, $0.umstid, $0.currency, $0.nav, $0.navDate] }
         }
     }
     
@@ -25,10 +25,15 @@ struct FundDetailData: Codable {
 
 struct FundData: Codable {
 
-    var fund: String
-    var units: Double
-    var navPrice: Double
-    var marketingValue: Double
-    var date: String
+    var masteraccount: String
+    var fundname: String
+    var scheme: String
+    var amountpaid: Double
+    var totalunit: Double
+    var umstid: String
+    var account: String?
+    var currency: String
+    var nav: Double
+    var navDate: String
 
 }
