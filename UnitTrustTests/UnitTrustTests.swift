@@ -104,7 +104,7 @@ class UnitTrustTests: XCTestCase {
             }
             
             do {
-                try csvText.write(to: path!, atomically: true, encoding: String.Encoding.utf8)
+                try csvText.write(to: path, atomically: true, encoding: String.Encoding.utf8)
             } catch {
                 print("error write file")
             }

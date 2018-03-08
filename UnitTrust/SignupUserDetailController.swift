@@ -23,6 +23,10 @@ class SignupUserDetailController: UIViewController {
         setupLayout()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false
+    }
+
     private func setupLayout() {
         signupView.profileEditButton.addTarget(self, action: #selector(profileEditHandler), for: .touchUpInside)
         view.addSubview(signupView)

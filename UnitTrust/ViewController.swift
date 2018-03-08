@@ -246,7 +246,10 @@ class ViewController: UIViewController {
     
     @objc
     private func guestHandler() {
-        
+        var navController = UINavigationController(rootViewController: LandingViewController())
+        present(navController, animated: true, completion: {
+            
+        })
     }
     
     @objc
@@ -265,6 +268,9 @@ class ViewController: UIViewController {
     @objc
     private func signupHandler() {
         slideFromRight()
+        if let navController = navigationController {
+            navController.pushViewController(SignupUserDetailController(), animated: true)
+        }
     }
     
     private func slideFromRight() {

@@ -28,11 +28,11 @@ class LogoBackgroundView: UIView {
         background.translatesAutoresizingMaskIntoConstraints = false
         background.layoutAttachAll()
         
-        logo.contentMode = .scaleAspectFit
-        addSubview(logo)
-        logo.translatesAutoresizingMaskIntoConstraints = false
-        logo.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        logo.topAnchor.constraint(equalTo: topAnchor, constant: 120.0).isActive = true
+//        logo.contentMode = .scaleAspectFit
+//        addSubview(logo)
+//        logo.translatesAutoresizingMaskIntoConstraints = false
+//        logo.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+//        logo.topAnchor.constraint(equalTo: topAnchor, constant: 120.0).isActive = true
     }
     
 }
