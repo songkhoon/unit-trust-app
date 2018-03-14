@@ -115,4 +115,15 @@ class UnitTrustTests: XCTestCase {
         waitForExpectations(timeout: 10, handler: nil)
     }
     
+    func testRetrieveFundData() {
+        let fundModel = FundModel()
+        if let fundDetail = fundModel.retrieveFundData() {
+            print("fund count: \(fundDetail.data.count))")
+            print("fund: \(fundDetail.data.map({ $0.transactionDate }))")
+        } else {
+            print("nil")
+        }
+
+    }
+    
 }

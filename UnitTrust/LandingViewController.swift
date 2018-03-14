@@ -69,7 +69,7 @@ class LandingViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = UIColor.navigationBarColor
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
 
-        title = "Fund Detail"
+        title = "Funds"
         
         setupCollectionView()
         setupScrollView()
@@ -79,6 +79,7 @@ class LandingViewController: UIViewController {
     private func setupCollectionView() {
         collectionView.bounces = false
         collectionView.dataSource = self
+        collectionView.delegate = self
         view.addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
@@ -203,3 +204,12 @@ extension LandingViewController: UICollectionViewDataSource {
     }
     
 }
+
+extension LandingViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigationController?.pushViewController(FundDetailViewController(), animated: true)
+    }
+    
+}
+

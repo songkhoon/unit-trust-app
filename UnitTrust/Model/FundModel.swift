@@ -20,4 +20,14 @@ class FundModel {
         return nil
     }
     
+    func retrieveFundData() -> FundData? {
+        if let path = Bundle.main.path(forResource: "detail", ofType: "json") {
+            if let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: Data.ReadingOptions.mappedIfSafe) {
+                let decoder = JSONDecoder()
+                return try? decoder.decode(FundData.self, from: data)
+            }
+        }
+        return nil
+    }
+    
 }
