@@ -189,7 +189,6 @@ class ViewController: UIViewController {
         emailButton.addTarget(self, action: #selector(emailHandler), for: .touchUpInside)
         
         let stackView:UIStackView = UIStackView()
-        stackView.addArrangedSubview(guestButton)
         stackView.addArrangedSubview(emailButton)
         
         stackView.axis = .vertical
@@ -209,7 +208,7 @@ class ViewController: UIViewController {
         buttonContainer.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor, constant: -80).isActive = true
         buttonContainer.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         buttonContainer.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8).isActive = true
-        buttonContainer.heightAnchor.constraint(equalToConstant: 115).isActive = true
+        buttonContainer.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
         
         let signupButton:UIButton = UIButton()
         let signupText = "Not a member? Sign Up"
@@ -246,7 +245,7 @@ class ViewController: UIViewController {
     
     @objc
     private func guestHandler() {
-        var navController = UINavigationController(rootViewController: LandingViewController())
+        let navController = UINavigationController(rootViewController: LandingViewController())
         present(navController, animated: true, completion: {
             
         })

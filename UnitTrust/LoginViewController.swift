@@ -56,10 +56,8 @@ class LoginViewController: UIViewController {
             if let email = loginView.emailField.text, let password = loginView.passwordField.text {
             }
             
-            var navController = UINavigationController(rootViewController: LandingViewController())
-            present(navController, animated: true, completion: {
-                
-            })
+            let navController = UINavigationController(rootViewController: LandingViewController())
+            show(navController, sender: self)
         }
     }
     

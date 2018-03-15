@@ -22,6 +22,7 @@ class LandingViewController: UIViewController {
     var menuLeftNavigationController: UISideMenuNavigationController?
     let dimBackground: UIView = UIView()
     var sideMenuController = SideMenuController()
+    let sideMenuManager = SideMenuManager()
     
     let dataArray: [[Double]] = {
         var finalArray = [[Double]]()
@@ -86,7 +87,7 @@ class LandingViewController: UIViewController {
     
     @objc
     private func sideMenuHandler() {
-        present(SideMenuManager.default.menuLeftNavigationController!, animated: true) {
+        present(sideMenuManager.menuLeftNavigationController!, animated: true) {
             self.sideMenuController.delegate = self
             self.sideMenuDisappear(disappear: false)
         }
@@ -95,12 +96,12 @@ class LandingViewController: UIViewController {
     private func setupSideMenu() {
         menuLeftNavigationController = UISideMenuNavigationController(rootViewController: sideMenuController)
         menuLeftNavigationController?.leftSide = true
-        SideMenuManager.default.menuLeftNavigationController = menuLeftNavigationController
-        SideMenuManager.default.menuFadeStatusBar = false
-        SideMenuManager.default.menuFadeStatusBar = false
-        SideMenuManager.default.menuWidth = view.frame.width * 0.8
-        SideMenuManager.default.menuShadowOpacity = 0
-        SideMenuManager.default.menuPresentMode = .viewSlideInOut
+        sideMenuManager.menuLeftNavigationController = menuLeftNavigationController
+        sideMenuManager.menuFadeStatusBar = false
+        sideMenuManager.menuFadeStatusBar = false
+        sideMenuManager.menuWidth = view.frame.width * 0.8
+        sideMenuManager.menuShadowOpacity = 0
+        sideMenuManager.menuPresentMode = .viewSlideInOut
         
         dimBackground.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         dimBackground.isHidden = true
@@ -263,7 +264,10 @@ extension LandingViewController: SideMenuControllerDelegate {
     func showInvitation() {}
     func showHelp() {}
     func showSetting() {}
-    func signout() {}
+    func signout() {
+        let navController = UINavigationController(rootViewController: ViewController())
+        show(navController, sender: nil)
+    }
 
 
 }
