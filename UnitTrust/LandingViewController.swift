@@ -9,6 +9,7 @@
 import UIKit
 import SwiftSpreadsheet
 import Charts
+import SideMenu
 
 class LandingViewController: UIViewController {
 
@@ -17,6 +18,10 @@ class LandingViewController: UIViewController {
     let numberFormatter = NumberFormatter()
     let lightGreyColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
     let fundModel = FundModel()
+    
+    var menuLeftNavigationController: UISideMenuNavigationController?
+    let dimBackground: UIView = UIView()
+    var sideMenuController = SideMenuController()
     
     let dataArray: [[Double]] = {
         var finalArray = [[Double]]()
@@ -70,10 +75,43 @@ class LandingViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
 
         title = "Funds"
+        let menuBar = UIBarButtonItem(image: #imageLiteral(resourceName: "harburger_menu").withRenderingMode(.alwaysOriginal), style: .done, target: self, action: #selector(sideMenuHandler))
+        navigationItem.leftBarButtonItem = menuBar
         
+        setupSideMenu()
         setupCollectionView()
         setupScrollView()
         setupPieChart()
+    }
+    
+    @objc
+    private func sideMenuHandler() {
+        present(SideMenuManager.default.menuLeftNavigationController!, animated: true) {
+            self.sideMenuController.delegate = self
+            self.sideMenuDisappear(disappear: false)
+        }
+    }
+    
+    private func setupSideMenu() {
+        menuLeftNavigationController = UISideMenuNavigationController(rootViewController: sideMenuController)
+        menuLeftNavigationController?.leftSide = true
+        SideMenuManager.default.menuLeftNavigationController = menuLeftNavigationController
+        SideMenuManager.default.menuFadeStatusBar = false
+        SideMenuManager.default.menuFadeStatusBar = false
+        SideMenuManager.default.menuWidth = view.frame.width * 0.8
+        SideMenuManager.default.menuShadowOpacity = 0
+        SideMenuManager.default.menuPresentMode = .viewSlideInOut
+        
+        dimBackground.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        dimBackground.isHidden = true
+        if let navView = navigationController?.view {
+            navView.addSubview(dimBackground)
+            dimBackground.translatesAutoresizingMaskIntoConstraints = false
+            dimBackground.leadingAnchor.constraint(equalTo: navView.leadingAnchor).isActive = true
+            dimBackground.trailingAnchor.constraint(equalTo: navView.trailingAnchor).isActive = true
+            dimBackground.topAnchor.constraint(equalTo: navView.topAnchor).isActive = true
+            dimBackground.bottomAnchor.constraint(equalTo: navView.bottomAnchor).isActive = true
+        }
     }
     
     private func setupCollectionView() {
@@ -211,5 +249,22 @@ extension LandingViewController: UICollectionViewDelegate {
         navigationController?.pushViewController(FundDetailViewController(), animated: true)
     }
     
+}
+
+extension LandingViewController: SideMenuControllerDelegate {
+    
+    func sideMenuDisappear(disappear: Bool) {
+        dimBackground.isHidden = disappear
+    }
+    
+    func showPersonProfile() {}
+    func showCompanyProfile() {}
+    func showAnnouncement() {}
+    func showInvitation() {}
+    func showHelp() {}
+    func showSetting() {}
+    func signout() {}
+
+
 }
 

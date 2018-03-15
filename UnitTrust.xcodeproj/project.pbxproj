@@ -43,6 +43,7 @@
 		1F70B194204CE4AA008FA118 /* FundDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70B192204CE02D008FA118 /* FundDetailData.swift */; };
 		1F70B197204CE7FA008FA118 /* FundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70B196204CE7FA008FA118 /* FundModel.swift */; };
 		1F70B198204CEB0C008FA118 /* FundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70B196204CE7FA008FA118 /* FundModel.swift */; };
+		1FDAC4EA205A5775009EEF78 /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDAC4E9205A5775009EEF78 /* SideMenuController.swift */; };
 		1FDDA8BE2058FF8E00576F7B /* detail.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FDDA8BD2058FF8E00576F7B /* detail.json */; };
 		1FDDA8C02059006E00576F7B /* FundDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDDA8BF2059006E00576F7B /* FundDetailViewController.swift */; };
 		2CFC42496AA92AD02C9B591E /* Pods_UnitTrustTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3D6B0E5ECD67907CF925E1 /* Pods_UnitTrustTests.framework */; };
@@ -114,6 +115,7 @@
 		1F70B18D204CD10C008FA118 /* last10fund.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = last10fund.json; sourceTree = "<group>"; };
 		1F70B192204CE02D008FA118 /* FundDetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundDetailData.swift; sourceTree = "<group>"; };
 		1F70B196204CE7FA008FA118 /* FundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundModel.swift; sourceTree = "<group>"; };
+		1FDAC4E9205A5775009EEF78 /* SideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuController.swift; path = UnitTrust/SideMenuController.swift; sourceTree = SOURCE_ROOT; };
 		1FDDA8BD2058FF8E00576F7B /* detail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = detail.json; sourceTree = "<group>"; };
 		1FDDA8BF2059006E00576F7B /* FundDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundDetailViewController.swift; sourceTree = "<group>"; };
 		2654BA45F7ADA6D70270D82E /* Pods-UnitTrustUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTrustUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTrustUITests/Pods-UnitTrustUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				1F70B17E204937C9008FA118 /* ForgotPasswordController.swift */,
 				1F70B186204943D1008FA118 /* SignupUserDetailController.swift */,
 				1F3D62422047A207006AF3C4 /* LandingViewController.swift */,
+				1FDAC4E9205A5775009EEF78 /* SideMenuController.swift */,
 				1FDDA8BF2059006E00576F7B /* FundDetailViewController.swift */,
 				1F3D623E204792C0006AF3C4 /* SpreadsheetCollectionReusableView.swift */,
 				1F3D61FD20477CA3006AF3C4 /* Main.storyboard */,
@@ -636,6 +639,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F70B197204CE7FA008FA118 /* FundModel.swift in Sources */,
+				1FDAC4EA205A5775009EEF78 /* SideMenuController.swift in Sources */,
 				BCF3B73F204837BE000A2BE0 /* LoginViewInterface.swift in Sources */,
 				BCF3B740204837BE000A2BE0 /* SignupProfileView.swift in Sources */,
 				1F70B17D2049378A008FA118 /* UserManager.swift in Sources */,
