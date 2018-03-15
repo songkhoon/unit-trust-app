@@ -4,6 +4,7 @@ def pods
     pod "SwiftSpreadsheet"
     pod 'IHKeyboardAvoiding'
     pod 'Charts'
+    pod 'SideMenu'
 end
 
 target 'UnitTrust' do

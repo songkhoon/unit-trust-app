@@ -3,18 +3,21 @@ PODS:
     - Charts/Core (= 3.0.5)
   - Charts/Core (3.0.5)
   - IHKeyboardAvoiding (4.2)
+  - SideMenu (3.1.5)
   - SwiftSpreadsheet (1.1.0)
 
 DEPENDENCIES:
   - Charts
   - IHKeyboardAvoiding
+  - SideMenu
   - SwiftSpreadsheet
 
 SPEC CHECKSUMS:
   Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
   IHKeyboardAvoiding: 9fbf816b7c3c84911964802ff110d12caf40ebef
+  SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
   SwiftSpreadsheet: bf014416e9186f1e4aee2b391fb45e5d4f21e1be
 
-PODFILE CHECKSUM: a64dff6039c2b070686b21b1b99a44d2cef6d004
+PODFILE CHECKSUM: 30fbb466055c389e9a962c13e5571320f14d2f0f
 
 COCOAPODS: 1.4.0
