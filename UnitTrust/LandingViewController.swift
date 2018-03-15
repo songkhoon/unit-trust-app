@@ -154,7 +154,8 @@ class LandingViewController: UIViewController {
             NSUIColor(red: 46/255.0, green: 204/255.0, blue: 113/255.0, alpha: 1.0),
             NSUIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1.0),
             NSUIColor(red: 231/255.0, green: 76/255.0, blue: 60/255.0, alpha: 1.0),
-            NSUIColor(red: 52/255.0, green: 152/255.0, blue: 219/255.0, alpha: 1.0)
+            NSUIColor(red: 52/255.0, green: 152/255.0, blue: 219/255.0, alpha: 1.0),
+            NSUIColor(red: 152/255.0, green: 152/255.0, blue: 219/255.0, alpha: 1.0)
         ]
         chartDataSet.sliceSpace = 2
         chartDataSet.selectionShift = 5
