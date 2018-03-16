@@ -44,6 +44,7 @@
 		1F70B197204CE7FA008FA118 /* FundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70B196204CE7FA008FA118 /* FundModel.swift */; };
 		1F70B198204CEB0C008FA118 /* FundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70B196204CE7FA008FA118 /* FundModel.swift */; };
 		1FDAC4EA205A5775009EEF78 /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDAC4E9205A5775009EEF78 /* SideMenuController.swift */; };
+		1FDAC4EC205A732E009EEF78 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDAC4EB205A732E009EEF78 /* HockeySDK.framework */; };
 		1FDDA8BE2058FF8E00576F7B /* detail.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FDDA8BD2058FF8E00576F7B /* detail.json */; };
 		1FDDA8C02059006E00576F7B /* FundDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDDA8BF2059006E00576F7B /* FundDetailViewController.swift */; };
 		2CFC42496AA92AD02C9B591E /* Pods_UnitTrustTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3D6B0E5ECD67907CF925E1 /* Pods_UnitTrustTests.framework */; };
@@ -116,6 +117,11 @@
 		1F70B192204CE02D008FA118 /* FundDetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundDetailData.swift; sourceTree = "<group>"; };
 		1F70B196204CE7FA008FA118 /* FundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundModel.swift; sourceTree = "<group>"; };
 		1FDAC4E9205A5775009EEF78 /* SideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuController.swift; path = UnitTrust/SideMenuController.swift; sourceTree = SOURCE_ROOT; };
+		1FDAC4EB205A732E009EEF78 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = "UnitTrust/Resources/HockeySDK-iOS/HockeySDK.embeddedframework/HockeySDK.framework"; sourceTree = "<group>"; };
+		1FDAC4ED205A7346009EEF78 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		1FDAC4EF205A734E009EEF78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1FDAC4F1205A7355009EEF78 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		1FDAC4F3205A735D009EEF78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FDDA8BD2058FF8E00576F7B /* detail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = detail.json; sourceTree = "<group>"; };
 		1FDDA8BF2059006E00576F7B /* FundDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundDetailViewController.swift; sourceTree = "<group>"; };
 		2654BA45F7ADA6D70270D82E /* Pods-UnitTrustUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTrustUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTrustUITests/Pods-UnitTrustUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFCBDB27C461C4B747118CD /* Pods_UnitTrust.framework in Frameworks */,
+				1FDAC4EC205A732E009EEF78 /* HockeySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +306,11 @@
 		83FFC641FE9F84D836427979 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1FDAC4F3205A735D009EEF78 /* Foundation.framework */,
+				1FDAC4F1205A7355009EEF78 /* CoreText.framework */,
+				1FDAC4EF205A734E009EEF78 /* CoreGraphics.framework */,
+				1FDAC4ED205A7346009EEF78 /* AssetsLibrary.framework */,
+				1FDAC4EB205A732E009EEF78 /* HockeySDK.framework */,
 				FF2B51086C2D94226C41D854 /* Pods_UnitTrust.framework */,
 				1F3D6B0E5ECD67907CF925E1 /* Pods_UnitTrustTests.framework */,
 				59A48CFE8EE20DABB677C8CC /* Pods_UnitTrustUITests.framework */,
@@ -830,10 +842,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ULB4RP6JB6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UnitTrust/Resources/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				INFOPLIST_FILE = UnitTrust/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.compass.UnitTrust;
+				PRODUCT_BUNDLE_IDENTIFIER = com.compass.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -847,10 +863,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ULB4RP6JB6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UnitTrust/Resources/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				INFOPLIST_FILE = UnitTrust/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.compass.UnitTrust;
+				PRODUCT_BUNDLE_IDENTIFIER = com.compass.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
